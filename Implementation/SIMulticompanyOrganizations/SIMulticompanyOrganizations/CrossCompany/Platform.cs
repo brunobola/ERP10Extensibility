@@ -137,8 +137,9 @@ namespace SUGIMPL_OME.CrossCompany
                 oDialog.ProgressBar2 = 100;
 
 
-                //Final by company operations
-                oCompany.FechaEmpresaTrabalho();
+                //Final by company operations     
+                //Can't close teh company due to problems opening extenssions, this mus be done in other way.
+                //oCompany.FechaEmpresaTrabalho();                
                 oDialog.SetCaption("", 2);
                 processedCompanies += 1;
                 oDialog.ProgressBar1 = Convert.ToInt32(((processedCompanies * 100) / groupCompanies.Count));
